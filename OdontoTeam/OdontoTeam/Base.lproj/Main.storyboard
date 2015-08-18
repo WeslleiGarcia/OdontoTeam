@@ -238,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnj-l3-ULG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="2627"/>
+            <point key="canvasLocation" x="1062" y="3063"/>
         </scene>
         <!--Detalhe Consulta-->
         <scene sceneID="nZ8-yL-gcH">
@@ -263,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJh-oe-wmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="2627"/>
+            <point key="canvasLocation" x="1656" y="3063"/>
         </scene>
         <!--Editar Consulta-->
         <scene sceneID="viM-1z-Xml">
@@ -284,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WwM-PC-yUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2166" y="2635"/>
+            <point key="canvasLocation" x="2134" y="3071"/>
         </scene>
         <!--Nova Consulta-->
         <scene sceneID="eph-bm-PxC">
@@ -299,11 +299,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nova Consulta" id="gzL-c0-Zil"/>
+                    <navigationItem key="navigationItem" title="Nova Consulta" id="gzL-c0-Zil">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="iJn-ZU-dTN"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xf-Kf-sx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="1943"/>
+            <point key="canvasLocation" x="1656" y="2379"/>
         </scene>
         <!--Novo Médico-->
         <scene sceneID="UAx-be-oYK">
@@ -318,11 +320,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Novo Médico" id="ZqI-HM-d9z"/>
+                    <navigationItem key="navigationItem" title="Novo Médico" id="ZqI-HM-d9z">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vi3-xe-zSs"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Se-5T-uqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="1951"/>
+            <point key="canvasLocation" x="1062" y="2387"/>
         </scene>
         <!--Clientes-->
         <scene sceneID="syP-xw-NJW">
@@ -415,7 +419,7 @@
             </objects>
             <point key="canvasLocation" x="1479" y="939"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalhe Cliente-->
         <scene sceneID="Bv2-Ea-dPv">
             <objects>
                 <viewController id="PKv-GS-UXn" sceneMemberID="viewController">
@@ -426,13 +430,112 @@
                     <view key="view" contentMode="scaleToFill" id="0Wv-yR-Lmr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pM-Oc-saF">
+                                <rect key="frame" x="20" y="208" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="endereço" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJ2-bX-Nhc">
+                                <rect key="frame" x="20" y="257" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJO-sM-v5J">
+                                <rect key="frame" x="20" y="304" width="140" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sg-VO-Pix">
+                                <rect key="frame" x="20" y="352" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usuario" translatesAutoresizingMaskIntoConstraints="NO" id="XtC-Lu-znN">
+                                <rect key="frame" x="100" y="72" width="120" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plano Atual:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBX-uD-9Hb">
+                                <rect key="frame" x="20" y="443" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99964488640000004" green="0.99964488640000004" blue="0.99964488640000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-dT-Awe">
+                                <rect key="frame" x="119" y="440" width="181" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.6588235294117647" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5OV-MM-nfM"/>
+                    <navigationItem key="navigationItem" title="Detalhe Cliente" id="5OV-MM-nfM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Cqv-Wy-THu">
+                            <connections>
+                                <segue destination="TZc-L4-X41" kind="push" id="jye-Nz-2SO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nza-bs-vfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2338" y="1362"/>
+            <point key="canvasLocation" x="1479" y="1618"/>
+        </scene>
+        <!--Editar Cliente-->
+        <scene sceneID="ymi-Cd-76c">
+            <objects>
+                <viewController id="TZc-L4-X41" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Czd-k2-GT4"/>
+                        <viewControllerLayoutGuide type="bottom" id="AWa-cE-vm4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykt-mY-S27">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-ab-7Gi">
+                                <rect key="frame" x="20" y="226" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="endereço" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-zB-IOK">
+                                <rect key="frame" x="20" y="275" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUv-H1-dyr">
+                                <rect key="frame" x="20" y="322" width="140" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hz0-SQ-MzM">
+                                <rect key="frame" x="20" y="370" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usuario" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-Z4-tgW">
+                                <rect key="frame" x="100" y="90" width="120" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plano Atual:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQJ-gJ-47g">
+                                <rect key="frame" x="20" y="449" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99964488640000004" green="0.99964488640000004" blue="0.99964488640000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozA-34-XXS">
+                                <rect key="frame" x="119" y="445" width="181" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.6588235294117647" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Editar Cliente" id="lPU-Pq-2Pw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="v7j-Re-5hW"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Le1-t6-gXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="1618"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dln-LT-WeC">
@@ -513,7 +616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jf-Dw-D2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="610"/>
+            <point key="canvasLocation" x="2400" y="602"/>
         </scene>
         <!--Editar Ficha-->
         <scene sceneID="Ayb-7Q-PBL">
@@ -527,28 +630,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-ab-7Gi">
-                                <rect key="frame" x="20" y="208" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fob-oL-pdD">
+                                <rect key="frame" x="22" y="217" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="endereço" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-zB-IOK">
-                                <rect key="frame" x="20" y="257" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="endereço" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEd-da-UIn">
+                                <rect key="frame" x="22" y="266" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUv-H1-dyr">
-                                <rect key="frame" x="20" y="304" width="140" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-E3-dD9">
+                                <rect key="frame" x="22" y="313" width="140" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hz0-SQ-MzM">
-                                <rect key="frame" x="20" y="352" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-u9-tLn">
+                                <rect key="frame" x="22" y="361" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usuario" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-Z4-tgW">
-                                <rect key="frame" x="100" y="72" width="120" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usuario" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-f8-EYo">
+                                <rect key="frame" x="102" y="81" width="120" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.6588235294117647" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
@@ -559,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1F-nD-SE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2885" y="602"/>
+            <point key="canvasLocation" x="2873" y="602"/>
         </scene>
         <!--Consultas-->
         <scene sceneID="WKo-wD-GWo">
